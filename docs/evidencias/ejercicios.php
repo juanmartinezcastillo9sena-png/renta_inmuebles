@@ -1,102 +1,187 @@
 <?php
 //Ejercicio 1
-echo "Ejercicio 1<br>";
-$nombre="Juan";
-$edad="28";
-if($edad>=18){
-    echo $nombre." puede ingresar al evento<br><br>";
-}else{
-    echo $nombre." no puede ingresar al evento<br><br>";
-}
+echo "<b>Ejercicio 1 - Tres Notas estudiantes</b><br>";
+echo "Ejercicio desarrollado en el cuaderno<br><br>";
 
 //Ejercicio 2
-echo "Ejercicio 2<br>";
-$producto="Computador";
-$cantidad=3;
-if($cantidad>0){
-    echo "El ".$producto." esta disponible<br><br>";
-}else{
-    echo "El ".$producto." esta agotado<br><br>";
-}
+echo "<b>Ejercicio 2 - Sistema Biblioteca</b><br>";
+echo "Ejercicio desarrollado en el cuaderno<br><br>";
 
 //Ejercicio 3
-echo "Ejercicio 3<br>";
-$estudiante="David";
-$nota=4.5;
-if ($nota>=3.0){
-    echo $estudiante." aprobado<br><br>";
-} else{
-    echo $estudiante." no aprobado<br><br>";
-}
+echo "<b>Ejercicio 3 - Inventario</b><br>";
+echo "Ejercicio desarrollado en el cuaderno<br><br>";
 
 //Ejercicio 4
-echo "Ejercicio 4<br>";
-$cliente="Sebastian";
-$compra=150000;
-if($compra>=100000){
-    $descuento=$compra*0.1;
-    $final=$compra-$descuento;    
-echo $cliente." como su compra es mayor a $100.000 tiene un descuento del 10%<br>"."Valor Original = ".$compra."<br>Descuento = ".$descuento."<br>Valor Final = ".$final."<br><br>";
-} else{
-    echo $cliente." su compra es por = ".$compra."<br><br>";
-}
+echo "<b>Ejercicio 4 - Restaurante</b><br>";
+echo "Ejercicio desarrollado en el cuaderno<br><br>";
 
 //Ejercicio 5
-echo"Ejercicio 5<br>";
-$usuario="admin";
-$contrasena="1234";
-if($usuario=="admin" && $contrasena=="1234"){
-    echo "Acceso permitido<br><br>";
-}else {
-    echo "Acceso denegado<br><br>";
-}
+echo "<b>Ejercicio 5 - Compras</b><br>";
+echo "Ejercicio desarrollado en el cuaderno<br><br>";
 
 //Ejercicio 6
-echo"Ejercicio 6<br>";
-$anos=18;
-$documento=true;
-if($anos>=18 && $documento==true){
-    echo"La persona puede ingresar<br><br>";
-} else{
-    echo"La persona no puede ingresar<br><br>";
-}
+echo "<b>Ejercicio 6 - Registro Usuario</b><br>";
+echo "Ejercicio desarrollado en el cuaderno<br><br>";
 
 //Ejercicio 7
-echo"Ejercicio 7<br>";
-$cliente="Juan";
-$frecuente=true;
-$valorcompra=190000;
-if($frecuente==true || $valorcompra>200000){
-    echo $cliente." cumple con una de las dos condiciones y puede tener la promoción<br><br>";
-}else{
-    echo $cliente." no puede tener la promocion<br><br>";
-}
+echo "<b>Ejercicio 7 - Sistema Prestamos</b><br>";
+echo "Ejercicio desarrollado en el cuaderno<br><br>";
 
 //Ejercicio 8
-echo"Ejercicio 8<br>";
-$numero=10;
-var_dump($numero=="10"); echo"<br>";//Como es una comparacion simple me aparece verdadero ya que son iguales";
-var_dump($numero==="10"); echo"<br><br>";//En la comparacion estricta me aparece falso ya que compara el tipo de datos que es y uno esta en INT y el otro en String
-
+echo "<b>Ejercicio 8 - Sistema Registro</b><br>";
+echo "Ejercicio desarrollado en el cuaderno<br><br>";
 
 //Ejercicio 9
-echo "Ejercicio 9<br>";
-$username="jdmc";
-$activo=true;
-if($username="jdmc" && $activo==true){
-    echo "Usuario activo<br><br>";
-} else{
-    echo "Usuario inactivo<br><br>";
-}
+echo "<b>Ejercicio 9 - MENSAJE PERSONAL</b><br>";
+$municipio = "Manizales"; $nombre="Juan"; $edad="28";
+echo "Nombre: ".$nombre."<br>Edad: ".$edad."<br>Municipio: ".$municipio;
+echo "<br><br>";
 
 //Ejercicio 10
-echo "Ejercicio 10<br>";
-$trabajador="Andres";
-$cargo="Administrador";
-$salario=3000001;
-if ($salario>3000000){
-    echo "El empleado : <br>"."Nombre : ".$trabajador."<br>Cargo : ".$cargo."<br>Salario : ".$salario. "<br>Salario superior al promedio";
-} else{
-    echo "El empleado : <br>"."Nombre : ".$trabajador."<br>Cargo : ".$cargo."<br>Salario : ".$salario. "<br>Salario dentro del rango esperado";
+echo "<b>Ejercicio 10 - INFORMACIÓN ACADEMICA</b><br>";
+$programa = "Analisis y Desarrollo de Software";$ficha = "3230905";
+echo "Nombre aprendiz: ".$nombre."<br>Programa Formación: ".$programa."<br>N° Ficha ".$ficha;
+echo "<br><br>";
+
+//EJERCICIO 11
+echo "<b>Ejercicio 11 - VIDEOJUEGO</b><br>";
+$personaje="spiderman";$nivel=4;$vidas=3;
+echo "Nombre Personaje: ".$personaje."<br>Nivel Personaje: ".$nivel."<br>N° Vidas".$vidas;
+echo "<br><br>";
+
+//EJERCICIO 12
+echo "<b>Ejercicio 12 - PLANETAS</b><br>";
+$planeta="Tierra";$lunas=1;$temperatura=30;
+echo "Nombre Planeta: ".$planeta."<br>N° Lunas: ".$lunas."<br>Temperatura: ".$temperatura;
+echo "<br><br>";
+
+//EJERCICIO 13
+echo "<b>Ejercicio 13 - PRODUCTO</b><br>";
+$producto="Computador";$precio=1500000;$cantidad=5;
+echo "Producto: ".$producto."<br> Precio: ".$precio."<br>Cantidad: ".$cantidad;
+echo "<br><br>";
+
+//EJERCICIO 14
+echo "<b>Ejercicio 14 - MASCOTA</b><br>";
+$mascota="Mike";$especie="Perro";$ano=1;
+echo "Nombre Mascota: ".$mascota."<br>Especie: ".$especie."<br> Edad: ".$ano." año";
+echo "<br><br>";
+
+//EJERCICIO 15
+echo "<b>Ejercicio 15 - VEHICULO</b><br>";
+$marca="Mercedes";$modelo=2025;$vel=250;
+echo "Marca: ".$marca."<br>Modelo: ".$modelo."<br>Vel. MAX: ".$vel." km";
+echo "<br><br>";
+
+//EJERCICIO 16
+echo "<b>Ejercicio 16 - PELICULA</b><br>";
+$pelicula="Mario Bross";$genero="Infantil";$ano=2024;
+echo "Pelicula: ".$pelicula."<br>Genero: ".$genero."<br>Año: ".$ano;
+echo "<br><br>";
+
+//EJERCICIO 17
+echo "<b>Ejercicio 17 - PERFIL RED SOCIAL</b><br>";
+$usuario="jjmar";$seguidores=461;$ciudad="La Dorada";
+echo "Nombre Usuario: ".$usuario."<br>Cantidad Seguidores: ".$seguidores."<br>Ciudad: ".$ciudad;
+echo "<br><br>";
+
+//EJERCICIO 18
+echo "<b>Ejercicio 18 - LIBRE</b><br>";
+$equipo="PSG";$puntos=80;$goles=50;$estatus="CAMPEÓN";
+echo "Equipo: ".$equipo."<br>Puntos: ".$puntos."<br>Goles: ".$goles."<br>Posición: ".$estatus;
+echo "<br><br>";
+
+//RETO EXTRA
+echo "<b>Ejercicio Extra - CONCATENACION</b><br>";
+$vivienda="La Dorada";
+echo "Hola ".$nombre." , tienes ".$edad." años y vives en ".$vivienda;
+echo "<br><br>";
+
+//RETO EXTRA 2
+echo "<b>Ejercicio Extra 2 - Error intencional</b><br>";
+echo "Tiene un error en la linea 2 y en la linea 3<br>";
+echo "En la linea 2 falta el signo de $ para definir variables y el ; al final. En la fila 3 pasa lo mismo el $ para definir cual es la variable a mostrar porque solo con el nombre no la lee y el ; al final<br><br>";
+
+//EJERCICIO 19
+echo "<b>EJERCICIO 19 - Suma de dos numeros</b><br>";
+$a=10;
+$b=15;
+$suma=$a+$b;
+echo "El resultado de la suma entre ".$a." + ".$b." es = ".$suma. "<br><br>";
+
+//EJERCICIO 20
+echo "<b>EJERCICIO 20 - Promedio 3 notas</b><br>";
+$nota1=4.8;
+$nota2=5.0;
+$nota3=3.5;
+$promedio=($nota1+$nota2+$nota3)/3;
+echo "El promedio de las notas " .$nota1." , " .$nota2." , ".$nota3." es = ".number_format($promedio, 1)."<br><br>";
+
+//EJERCICIO 21
+echo "<b>EJERCICIO 21</b><br>";
+$precio=100000;
+$iva=$precio*0.19;
+$total=$iva+$precio;
+echo "Valor producto = ".$precio."<br>IVA : ".$iva."<br>Total a pagar : ".$total."<br><br>";
+
+//EJERCICIO 22
+echo "<b>Ejercicio 22</b><br>";
+$valor=50000;
+$descuento=0.10;
+echo "Valor producto: ".$valor."<br>Descuento: ".$descuento*(100)."% <br>Valor final: ".$valor-($valor*$descuento);
+
+//RETO EXTRA
+echo "<br><br><b>Reto Extra - Factura Simple</b><br>";
+$articulo="Celular";
+$preciou=1300000;
+$cantidad=3;
+echo "Producto adquirido: ".$articulo."<br>Precio unitario: ".$preciou."<br>Cantidad: ".$cantidad."<br>Subtotal: ".$preciou*$cantidad."<br>IVA: ".($preciou*$cantidad)*0.19."<br>Total: ".($preciou*$cantidad)+(($preciou*$cantidad)*0.19)."<br><br>";
+
+// EJERCICIO 23
+echo "<b>Ejercicio 23</b><br>";
+$nota=3.5;
+if($nota>=3.0){
+    echo "El estudiante aprobo<br><br>";
+} else {
+    echo"El estudiante reprobo<br><br>";
 }
+
+//EJERCICIO 24
+echo "<b>Ejercicio 24</b><br>";
+$edad=16;
+if($edad>=18){
+    echo"Es mayor de edad<br><br>";
+} else{
+    echo "Es menor de edad<br><br>";
+}
+
+//EJERCICIO 25
+echo "<b>Ejercicio 25</b><br>";
+$valor=300000;
+if($valor>100000){
+    echo "Por superar los 100.000 tiene un descuento del 10%. Su nuevo precio es = ".$valor-($valor*0.10)."<br><br>";
+}else {
+    echo "El precio es ".$valor."<br><br>";
+}
+
+//EJERCICIO 26
+echo "<b>Ejercicio 26</b><br>";
+$cantidad=6;
+if($cantidad<1){
+    echo "Se encuentra agotado<br><br>";
+} else { if($cantidad>=1 && $cantidad<=5){
+    echo"Quedan pocas unidades<br><br>";
+    } else{
+    echo "Tiene stock<br><br>";
+    }
+}
+
+//RETO EXTRA
+echo "<b>Reto extra - USO var_dump() </b><br>";
+$numero=10;
+
+var_dump($numero=="10");echo"<br>";
+var_dump($numero==="10");echo"<br>";
+echo"La diferencia es que con == el sistema solo compara superficialmente, solo el valor. Y con === comparar hasta el tipo de dato que es.<br>";
+echo"El primero es true porque no mira los tipos de datos solo ve que ambos son el 10 y el en el segundo es false porque analiza los tipos de datos y uno es INT y el otro String";
 ?>
